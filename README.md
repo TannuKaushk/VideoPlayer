@@ -3,9 +3,8 @@
 * User can play & pause the video and providing forward and backward controllers. 
 * device rotation control to enhance the user experience and provide seamless video playback.
 ## Screenshots
-![Potrait](https://github.com/TannuKaushk/VideoPlayer/assets/68506215/f51e1efd-9339-4600-9466-36a0b39cc6c7)
-
-![Simulator Screenshot - iPhone 15 Pro - 2023-12-07 at 15 18 43](https://github.com/TannuKaushk/VideoPlayer/assets/68506215/3ddb2cb3-de8b-4d38-a1da-e6394b2f2713)
+![Landscape](https://github.com/TannuKaushk/VideoPlayer/assets/68506215/b4b690a3-cae1-497f-91fd-dfe9279a8380)
+![Potrait](https://github.com/TannuKaushk/VideoPlayer/assets/68506215/2a487f29-f683-4b24-a0ae-fb9d66c622c7)
 
 ## Features
 * Play and pause video playback with AVPlayer
