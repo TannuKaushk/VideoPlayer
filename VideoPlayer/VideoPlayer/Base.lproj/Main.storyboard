@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHH-HP-EpN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nip-NZ-NUC">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2wB-30-wIM">
+                                                <rect key="frame" x="30" y="190" width="354" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-Nb-adJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="30" id="eeZ-Yu-YSg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="6HG-QX-0Zp">
+                                                        <rect key="frame" x="38" y="0.0" width="207" height="51"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxF-Z5-uUd">
+                                                        <rect key="frame" x="253" y="0.0" width="71" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fgf-70-Jah">
+                                                        <rect key="frame" x="334" y="1" width="20" height="48"/>
+                                                        <imageReference key="image" image="arrow.down.backward.and.arrow.up.forward" catalog="system" renderingMode="hierarchical">
+                                                            <hierarchicalColors>
+                                                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </hierarchicalColors>
+                                                        </imageReference>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZvT-Ze-p8D">
+                                                <rect key="frame" x="127" y="105" width="160" height="40"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C1q-oz-ER0">
+                                                        <rect key="frame" x="0.0" y="-1.5" width="40" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Bfc-Gl-sIj"/>
+                                                            <constraint firstAttribute="width" constant="40" id="xN1-U5-ebU"/>
+                                                        </constraints>
+                                                        <imageReference key="image" image="goforward.10" catalog="system" renderingMode="hierarchical">
+                                                            <hierarchicalColors>
+                                                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </hierarchicalColors>
+                                                        </imageReference>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z0n-oE-Vwu">
+                                                        <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="5bq-nP-WcO"/>
+                                                            <constraint firstAttribute="width" constant="40" id="v7O-aE-baB"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="29R-zJ-QOz">
+                                                        <rect key="frame" x="120" y="-1.5" width="40" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="3CO-1o-did"/>
+                                                            <constraint firstAttribute="height" constant="40" id="UD3-6e-bd4"/>
+                                                        </constraints>
+                                                        <imageReference key="image" image="goforward.10" catalog="system" renderingMode="hierarchical">
+                                                            <hierarchicalColors>
+                                                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </hierarchicalColors>
+                                                        </imageReference>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ZvT-Ze-p8D" firstAttribute="centerX" secondItem="Nip-NZ-NUC" secondAttribute="centerX" id="FeT-gW-1Ay"/>
+                                            <constraint firstItem="2wB-30-wIM" firstAttribute="leading" secondItem="Nip-NZ-NUC" secondAttribute="leading" constant="30" id="ICA-gT-Zv2"/>
+                                            <constraint firstAttribute="trailing" secondItem="2wB-30-wIM" secondAttribute="trailing" constant="30" id="WMg-9k-dxV"/>
+                                            <constraint firstAttribute="bottom" secondItem="2wB-30-wIM" secondAttribute="bottom" constant="10" id="eV7-TB-2XK"/>
+                                            <constraint firstItem="ZvT-Ze-p8D" firstAttribute="centerY" secondItem="Nip-NZ-NUC" secondAttribute="centerY" id="nPm-U5-4XT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nip-NZ-NUC" firstAttribute="top" secondItem="IHH-HP-EpN" secondAttribute="top" id="1eJ-F8-thN"/>
+                                    <constraint firstItem="Nip-NZ-NUC" firstAttribute="leading" secondItem="IHH-HP-EpN" secondAttribute="leading" id="4mq-GE-Tzb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nip-NZ-NUC" secondAttribute="bottom" id="QAW-Uz-dHm"/>
+                                    <constraint firstAttribute="height" constant="250" id="mjD-7J-rGJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nip-NZ-NUC" secondAttribute="trailing" id="q73-TO-Yo1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IHH-HP-EpN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KsW-gk-kw2"/>
+                            <constraint firstItem="IHH-HP-EpN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="SXh-IV-PAb"/>
+                            <constraint firstItem="IHH-HP-EpN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pbZ-B8-dCj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="expandView" destination="fgf-70-Jah" id="EbQ-rM-Tfk"/>
+                        <outlet property="heightVideoPlayer" destination="mjD-7J-rGJ" id="4S6-vN-izL"/>
+                        <outlet property="img10SecBack" destination="C1q-oz-ER0" id="c6O-SD-VNp"/>
+                        <outlet property="img10SecFow" destination="29R-zJ-QOz" id="0SD-Nq-nDf"/>
+                        <outlet property="innerView" destination="Nip-NZ-NUC" id="xwJ-5T-hqF"/>
+                        <outlet property="lbCurrentTime" destination="qJK-Nb-adJ" id="BGj-7E-qk6"/>
+                        <outlet property="lbTotalTime" destination="rxF-Z5-uUd" id="ycy-qM-5vt"/>
+                        <outlet property="playButton" destination="z0n-oE-Vwu" id="0OS-oU-WDp"/>
+                        <outlet property="sliderLabel" destination="6HG-QX-0Zp" id="lUU-jz-gIi"/>
+                        <outlet property="stackViewButton" destination="ZvT-Ze-p8D" id="Gev-2z-HVa"/>
+                        <outlet property="videoPlayer" destination="IHH-HP-EpN" id="6YH-LA-QWU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="49.553571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.down.backward.and.arrow.up.forward" catalog="system" width="128" height="115"/>
+        <image name="goforward.10" catalog="system" width="119" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
